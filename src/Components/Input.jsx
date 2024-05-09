@@ -17,13 +17,13 @@ const Input = ({ handleFormSubmitData }) => {
         onSubmit={handleSubmit(handleFormSubmit)}
       >
         <input
-          className="px-2 py-1 border rounded-md font-semibold h-8 text-[1rem]  w-[25%]"
+          className="px-2 py-1 border rounded-md font-semibold h-8 text-[1.1rem]  w-[25%]"
           {...register("heading")}
           type="text"
           placeholder="Enter your Task Heading..."
         />
         <input
-          className="px-2 py-1 border rounded-md font-semibold h-8 text-[0.8rem] w-[25%]"
+          className="px-2 py-1 border rounded-md font-semibold h-8 text-[0.9rem] w-[25%]"
           {...register("desc")}
           type="text"
           placeholder="Enter your Task  Small Description"
@@ -38,7 +38,7 @@ const Input = ({ handleFormSubmitData }) => {
             type="date"
           />
         </div>
-        <button className="px-3 py-1 cursor-pointer bg-zinc-500  rounded-md font-extrabold font-serif">submit</button>
+        <button className="px-3 py-1 text-zinc-900 cursor-pointer bg-white  rounded-md font-extrabold font-serif">submit</button>
       </form>
     </>
   );
